@@ -1,0 +1,11 @@
+{% extends 'by_rubric.html' %}
+{% block current %} Текущая страница - Служба занятости{% endblock %}
+{%  block notes %}
+    <h1 class="textsize">
+    {{ human.idslujba_zaniatosti}}.
+    {{ human.name_slujba_zaniatosti }}
+    </h1>
+
+    <p>{{ human.work_slujba_zaniatosti}}
+    </p>
+{% endblock %}

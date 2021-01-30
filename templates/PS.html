@@ -1,0 +1,12 @@
+{% extends 'by_rubric.html' %}
+{% block current %} Текущая страница - Паспортный стол {% endblock %}
+{%  block notes %}
+    <h1 class="textsize">
+    {{ human.idpasportnij_stol}}.
+    {{ human.name_pasportnij_stol }}
+    </h1>
+
+    <p>{{ human.serija_nomer_pasportnij_stol}}
+    {{ human.data_vidachi_pasportnij_stol}}
+    </p>
+{% endblock %}

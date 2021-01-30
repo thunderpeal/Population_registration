@@ -1,0 +1,11 @@
+{% extends 'by_rubric.html' %}
+{% block current %} Текущая страница - Налоговая служба{% endblock %}
+{%  block notes %}
+    <h1 class="textsize">
+    {{ human.idnalogovaja }}.
+    {{ human.name_nalogovaja }}
+    </h1>
+
+    <p>{{ human.property_nalogovaja }}
+    {{ human.dolg_nalogovaja }}</p>
+{% endblock %}

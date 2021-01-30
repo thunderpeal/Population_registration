@@ -1,0 +1,48 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Главная - ресурс переписи</title>
+        {% bootstrap_css %}
+        <link rel="stylesheet" type="text/css"
+        href="{% static 'style.css' %}">
+        {% bootstrap_javascript jquery='slim' %}
+</head>
+<body>
+<header>
+
+</header>
+<main class="image1">
+<div class="login_name">
+    <h2>Вход на государственный ресурс</h2>
+</div>
+
+{% if user.is_authenticated %}
+    <div class="login2">
+        <h2>Вы уже выполнили вход.</h2>
+        <a href="{% url 'secret' %}">Перейти на сайт</a>
+        <a class="nav-link" href="{% url 'logout' %}">Выход</a>
+    </div>
+
+{% else %}
+    <div class="login">
+    <form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form layout='horizontal' %}
+    <input type="hidden" name="next" value="{{ next }}">
+    {% buttons submit='Войти' %}{% endbuttons %}
+</form>
+    </div>
+
+{% endif %}
+</main>
+<footer class="mt-sm-5">
+            <p class="text-right font-italic">&copy; Булахов В.А. - 2021</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'by_rubric.html' %}
+{% block current %} Текущая страница - Пенсионный Фонд {% endblock %}
+{%  block notes %}
+    <h1 class="textsize">
+    {{ human.idpensionnij_fond}}.
+    {{ human.name_pensionnij_fond }}
+    </h1>
+
+    <p>{{ human.salary_pensionnij_fond}}
+    </p>
+{% endblock %}

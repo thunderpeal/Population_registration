@@ -1,0 +1,28 @@
+{% extends "layout/basic.html" %}
+
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+{% if people %}
+
+<div class="cntr2">
+    <div>
+    <ol class="list-unstyled f">
+    {% for human in people %}
+        <li class="media-body m-1 p-1 border ">
+        <div class = 'media-body'>
+            {% block notes %}
+            {% endblock notes%}
+        </div>
+        </li>
+
+    {% endfor %}
+</ol>
+    </div>
+</div>
+<div class="cntr">
+{% bootstrap_pagination page url=keyword %}
+    </div>
+{% endif %}
+{% endblock %}

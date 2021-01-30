@@ -1,0 +1,51 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Главная{% endblock %} - ресурс переписи</title>
+        {% bootstrap_css %}
+        <link rel="stylesheet" type="text/css"
+        href="{% static 'style.css' %}">
+        {% bootstrap_javascript jquery='slim' %}
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class='main-menu'>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='GIBDD' %}">Все люди</a></li>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='GIBDD' %}">ГИБДД</a></li>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='Nalog' %}">Налоговая</a></li>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='PS' %}">Паспортный стол</a></li>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='PF' %}">Пенсионный фонд</a></li>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='SZ' %}">Служба занятости</a></li>
+                    <li class='menu-item'><a class='white' href="{% url 'rubric' rubric='ZAGS' %}">ЗАГС</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="row">
+            <ul class="col nav justify-content-end border" >
+                <li class="nav-item nav-link textsize">{% block current %} {% endblock %}</li>
+                <li class="nav-item"><a class="nav-link textsize" href="">Скачать отчет</a></li>
+                <li class="nav-item"><a class="nav-link textsize" href="{% url 'logout' %}">Выход</a></li>
+            </ul>
+        </div>
+        <div class="cntr">
+            <div class="image2"></div>
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+            <div class="image2">
+            </div>
+        </div>
+        <footer class="mt-sm-5">
+            <p class="text-right font-italic">&copy; Булахов В.А. - 2021</p>
+        </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+.white{
+    color:white;
+    text-decoration: none;
+
+}
+.menu-item>a:hover {
+    color: red; /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: none; /* Добавляем подчеркивание */
+}
+
+
+
+.red{
+    background-color: red;
+}
+.menu-item>a:visited {
+    #color: white;
+    text-decoration: none;/* Цвет посещенных ссылок */
+   }
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.login_name{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Roboto';
+}
+
+.login{
+    margin: 50px 350px;
+    border: 3px dashed blue ;
+    padding: 20px 20px 0;
+}
+
+
+.login2{
+    margin: 50px 350px;
+    border: 3px dashed blue ;
+    padding: 20px 20px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 21px;
+
+}
+
+.textsize{
+    font-size: 21px;
+}
+.main-menu{
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    vertical-align: middle;
+    font-size: 30px;
+    color: white;
+    display: flex;
+
+}
+
+
+
+.menu-item{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #ffffff;
+}
+
+header{
+    height: 80px;
+    width: auto;
+    background-color: #0000ff;
+}
+
+main{
+    margin: 10px;
+
+}
+footer{
+    margin: 20px;
+    position: fixed;
+    right:0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.cntr{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.cntr2{
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.f{
+    width:600px;
+}
+
+.image1{
+     background: url(RF.jpg) left / auto 100% no-repeat, url(RF.jpg) right / auto 100% no-repeat;
+    background-size: 190px 400px;
+    height:500px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+.image2{
+    margin-top: 40px;
+    height: 400px;
+    width: 190px;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: url(RF.jpg) left / auto 100% no-repeat, url(RF.jpg) right / auto 100% no-repeat;
+    background-size: 190px 400px;
+}

@@ -1,0 +1,12 @@
+{% extends 'by_rubric.html' %}
+{% block current %} Текущая страница - ГИБДД {% endblock %}
+{%  block notes %}
+    <h1 class="textsize">
+    {{ human.idgibdd }}.
+    {{ human.name_gibdd }}
+    </h1>
+
+    <p>{{ human.shtrav_gibdd }}
+    {{ human.phone_gibdd }}
+    {{ human.address_gibdd }}</p>
+{% endblock %}

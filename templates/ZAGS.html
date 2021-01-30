@@ -1,0 +1,11 @@
+{% extends 'by_rubric.html' %}
+{% block current %} Текущая страница - ЗАГС {% endblock %}
+{% block notes %}
+    <h1 class="textsize">
+    {{ human.idZAGS }}.
+    {{ human.name_ZAGS }}
+    </h1>
+
+    <p>{{ human.family_ZAGS }}
+    </p>
+{% endblock %}
